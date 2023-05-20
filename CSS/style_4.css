@@ -29,6 +29,9 @@ section{
     width: 940px;
     margin: 0 auto;
 }
+.left,.right{
+    display: inline-block;
+}
 button{
     display: inline-block;
     background-color: #A8863D;
