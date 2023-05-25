@@ -51,6 +51,7 @@ header a:last-child, footer a:last-child{
     display: inline-block;
     width: 460px;
     vertical-align: top;
+    height: 37px;
 }
 .social{
     text-align: right;
@@ -91,5 +92,36 @@ h1{
 .color_1{
     padding: 70px 0 81px;
     background-color: #F2F2F2;
-
+}
+.smartphon{
+    padding: 100px 0 27px;
+    background-color: white;
+}
+.smartphon p{
+    margin: 0 0 43px 0; 
+}
+.color_2{
+    padding: 58px 0 58px;
+    background-color: #FAC960;
+}
+.color_2 p{
+    padding: 0 0 33px 0;
+}
+.empty{
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #758696;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 5px 23px 5px 23px;
+    height: auto;
+}
+footer{
+    padding: 81px 0 81px;
+    background-color: #F2F2F2;
+}
+.logo_footer{
+    padding-bottom: 25px;
 }
