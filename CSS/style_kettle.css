@@ -1,0 +1,180 @@
+/**{
+    box-sizing: border-box;
+}*/
+/*body{
+    width: 1440px;
+    height: 788px;
+}*/
+header{
+   position: sticky;
+   z-index: 50;
+   background-color: white;
+   top: 0;
+   height: 70px;
+   width: 1440px;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 21px;
+   color: #000000;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    text-align: left;
+    margin-left: 70px;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 550px;
+}
+.menu a{
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+.hover_blok{
+    position: absolute;
+    display: none;
+}
+.products:hover + .hover_blok{
+    display: block;
+}
+/*.products:hover + .border{
+    display: block;
+}
+.border{
+    position: absolute;
+    /*color: purple;
+    border-bottom: 4px solid purple;
+    margin-bottom: -16px;
+    z-index: 100;
+    display: none;
+    text-decoration: underline purple 4px;
+    padding-bottom: 0px;
+}*/
+.fo_user{
+    text-align: right;
+    margin-right: 70px;
+}
+.fo_user a{
+    padding-left: 20px;
+    text-decoration: none;
+}
+main{
+   background-color: #F5C7B3;
+}
+main section, main form{
+    display: inline-block;
+    vertical-align: top;
+}
+.left{
+    text-align: left;
+    margin-left: 152px;
+}
+.txt{
+    color: #FFFFFF;
+    padding-top: 127px;
+}
+h1{
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 150px;    
+    margin: 0 auto;
+}
+p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    width: 560px;
+    padding-top: 8px;
+    margin: 0 auto;
+}
+.forms{
+    padding-top: 36px;
+}
+button{
+    background: #000000;
+    box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 92px;
+    margin-right: 46px;
+}
+button:hover{
+    background: #0a1897;
+    color: red;
+    font-size: 18px;
+}
+.forms a{
+    text-decoration: none;
+}
+#video{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding-right: 8px;
+}
+label{
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.colors{
+    padding-top: 64px;
+}
+.colors img{
+    width: 53px;
+    height: 68px;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    padding: 6.5px 11px 5.5px 16px;
+    margin-right: 16px;   
+}
+.colors img:hover{
+    background-color: white;
+}
+.colors img:last-child{
+    margin-right: 0;
+}
+.right{
+    text-align: right;
+}
+.right div{
+    display: inline-block;
+}
+.smeg{
+    width: 421px;
+    height: 542px;
+    padding-top: 68px;
+    margin-left: 120px; 
+    position: relative;
+    z-index: 2;
+}
+.beige{
+    padding-top: 87px;
+    width: 123px;
+    height: 503px;
+    position: absolute;
+    margin-left: -59px;
+}
+form{
+    position: fixed;
+    top: 300px;
+    left: 1380px;
+}
+/*form input{
+    background-color: transparent;
+}*/

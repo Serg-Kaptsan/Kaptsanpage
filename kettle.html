@@ -5,29 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kettles </title>
+    <!--<link rel="stylesheet" href="CSS/normalize.css">-->
+    <!--<link rel="stylesheet" href="CSS\reset.css">-->
     <link rel="stylesheet" href="CSS\style_kettle.css">
     <meta name="author" content="Kaptsan.S">
     <meta name="description" content="Домашнее Задание №5. Position">
     <meta name="keywords" content="fe-start-0605-2023">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:ital,wght@0,900;1,300&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-       <div class="logo">
+       <div class="container">
+        <div class="logo">
         <img src="imeges/1200px-Smeg_logo 2.png" alt="logo">
        </div>
        <div class="menu">
-        <section class="products">
-          PRODUCTS
-        </section>
-        <section class="AESTHETIC LINES">
+        <a href="#" class="products">
+            <!--<div class="border"></div>-->
+            PRODUCTS
+        </a>
+            <div class="hover_blok">
+                <img src="imeges\hover-blok.png" alt="hover_block">
+            </div>
+        <a href="#" class="AESTHETIC LINES">
             AESTHETIC LINES
-        </section>
-        <section class="INSPIRATION">
+        </a>
+        <a href="#" class="INSPIRATION">
             INSPIRATION
-        </section>
+        </a>
        </div>
        <div class="fo_user">
         <a href=#>
@@ -41,6 +50,7 @@
             <img src="imeges/shopping-cart 1.png" alt="basket">
         </a>
        </div>
+      </div>
     </header>
     <main>
         <section class="left">
@@ -56,9 +66,6 @@
                 <button class="shop" type="submit">
                     Shop Now
                 </button>
-                <a href="#" target="_self">
-
-                </a>
                 <a href="#" target="_self">
                     <img id="video" src="imeges/Group.png" alt="video">
                     <label for="video">watch video</label>
@@ -78,12 +85,17 @@
             <div class="beige">
                 <img src="imeges/color.png" alt="color">
             </div>
+            <div> 
+            <form action="#">
+                <input type="radio" id="choice1" name="choice">
+                <br>
+                <input type="radio" id="choice2" name="choice">
+                <br>
+                <input type="radio" id="choice3" name="choice">
+                <br>
+                <input type="radio" id="choice4" name="choice">
+            </form>
+            </div>
         </section>
-        <section class="choice">
-                <img src="imeges/Ellipse.png" alt="ellipse">
-                <img src="imeges/Ellipse.png" alt="ellipse">
-                <img src="imeges/Ellipse.png" alt="ellipse">
-                <img src="imeges/Ellipse.png" alt="ellipse">
-         </section>
     </main>
 </body>
