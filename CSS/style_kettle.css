@@ -1,6 +1,6 @@
-/**{
+*{
     box-sizing: border-box;
-}*/
+}
 /*body{
     width: 1440px;
     height: 788px;
@@ -11,7 +11,7 @@ header{
    background-color: white;
    top: 0;
    height: 70px;
-   width: 1440px;
+   width: 100%;
    font-weight: 600;
    font-size: 14px;
    line-height: 21px;
@@ -36,7 +36,7 @@ header{
 .menu a{
     text-decoration: none;
     color: #000000;
-    position: relative;
+    /* position: relative; */
 }
 .hover_blok{
     position: absolute;
@@ -45,6 +45,26 @@ header{
 .products:hover + .hover_blok{
     display: block;
 }
+div.products{
+    position: relative;
+}
+div.products::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 96px;
+    color: purple;
+    bottom: 0-26;
+}
+/* .border{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    color: purple;
+    bottom: -26px;
+    z-index: 100;
+} */
 /*.products:hover + .border{
     display: block;
 }
@@ -119,7 +139,7 @@ button:hover{
     text-decoration: none;
 }
 #video{
-    width: 50px;
+    width: 58px;
     height: 50px;
     vertical-align: middle;
     padding-right: 8px;
@@ -136,8 +156,8 @@ label{
     padding-top: 64px;
 }
 .colors img{
-    width: 53px;
-    height: 68px;
+    width: 80px;
+    height: 80px;
     border: 1px solid #FFFFFF;
     border-radius: 7px;
     padding: 6.5px 11px 5.5px 16px;
@@ -175,6 +195,17 @@ form{
     top: 300px;
     left: 1380px;
 }
-/*form input{
-    background-color: transparent;
-}*/
+form input{
+    position: relative;
+}
+input::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* border-radius: 10px; */
+    border: 2px solid white;
+    color:  #F5C7B3;
+    right: -4px;
+    top: -4px;
+}
