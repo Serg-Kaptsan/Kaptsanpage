@@ -36,14 +36,6 @@ header{
 .menu a{
     text-decoration: none;
     color: #000000;
-    /* position: relative; */
-}
-.hover_blok{
-    position: absolute;
-    display: none;
-}
-.products:hover + .hover_blok{
-    display: block;
 }
 div.products{
     position: relative;
@@ -51,33 +43,26 @@ div.products{
 div.products::after{
     content: "";
     position: absolute;
-    height: 4px;
-    width: 96px;
-    color: purple;
-    bottom: 0-26;
-}
-/* .border{
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    color: purple;
+    left: 0;
+    right: 0;
     bottom: -26px;
-    z-index: 100;
-} */
-/*.products:hover + .border{
+    border-bottom: 4px solid purple;
+    visibility: hidden;
+}
+div.products:hover::after{
+    visibility:visible
+}
+.hover_blok{
+    position: absolute;
+    width: 1072px;
+    height: 373px;
+    left: 270px;
+    bottom: -389px;
+    display: none;
+}
+div.products:hover + .hover_blok{
     display: block;
 }
-.border{
-    position: absolute;
-    /*color: purple;
-    border-bottom: 4px solid purple;
-    margin-bottom: -16px;
-    z-index: 100;
-    display: none;
-    text-decoration: underline purple 4px;
-    padding-bottom: 0px;
-}*/
 .fo_user{
     text-align: right;
     margin-right: 70px;
@@ -198,14 +183,22 @@ form{
 form input{
     position: relative;
 }
-input::before{
+input[type="radio"]{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color:  #F5C7B3;
+    position: absolute;
+}
+/* input::before{
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     border: 2px solid white;
     color:  #F5C7B3;
     right: -4px;
     top: -4px;
-}
+} */
