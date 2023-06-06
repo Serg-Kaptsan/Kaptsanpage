@@ -13,14 +13,15 @@
     <meta name="keywords" content="fe-start-0605-2023">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="background">
         <header>
             <div class="container">
                 <div class="logo_QWERy">
-                    <a ref="#" class="logo_QWERy">
+                    <a href="#QWERy" class="logo_QWERy">
                         QWERy
                     </a>
                 </div>
@@ -37,6 +38,7 @@
                </div>
                <div class="Search">
                     <input type="text">
+                    
                     <label for="Search">
                         Search
                     </label>
@@ -47,14 +49,14 @@
             <p>
                 Follow us
             </p>
-            <a href="#" class="icon">
-                <img src="#" alt="icon">
+            <a href="#" class="target">
+                <img src="imeges\target.png" alt="target">
             </a>
             <a href="#" class="twit">
-                <img src="#" alt="twit">
+                <img src="imeges\Vector.png" alt="twit">
             </a>
             <a href="#" class="fb">
-                <img src="#" alt="fb">
+                <img src="imeges\fb-icon.png" alt="fb">
             </a>
         </section>
         <div class="level-1">
@@ -64,12 +66,13 @@
                 </h3>
                 <h1>
                     Discover
-                    <p>
-                     Wonderful Indonesia   
-                    </p>
                 </h1>
+                <p>
+                    Wonderful Indonesia   
+                </p>
                 <div class="scroll">
                     Scroll down
+                    <i class="fa-solid fa-arrow-down"></i>
                 </div>
                 <div class="Mark">
                     M
@@ -77,9 +80,10 @@
             </section>
         </div>
     </div>
+    <div class="wrapper">
         <div class="level-2">
             <img src="imeges\mounts_row.jpg" alt="mounts_row">
-            <div>
+            <div class="text_block">
                 <h3>
                     EAST nUSA TENGGARA
                 </h3>
@@ -91,6 +95,7 @@
                 </p>
                 <p class="read_more">
                     read more
+                    <i class="fa-solid fa-arrow-right"></i>
                 </p>
             </div>
         </div>  
@@ -105,8 +110,9 @@
                 <p>
                     Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.
                 </p>
-                <p class="read_more">
+                <p class="read_more_l3">
                     read more
+                    <i class="fa-solid fa-arrow-right"></i>
                 </p>
             </div>
         </div>
@@ -116,62 +122,86 @@
                     INDONESIAN CULTURE
                 </h3>
                 <h2>
-                    Our culture here is very friendly to people
+                    Our culture here<br> is very friendly<br> to people
                 </h2>
                 <p>
                     known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.
                 </p>
                 <p class="read_more">
                     read more
+                    <i class="fa-solid fa-arrow-right"></i>
                 </p>
             </div>
             <img src="imeges\girls.jpg" alt="girls">
         </div>
         <div class="bottom_line">
-            <p class="QWERy">
+            <p id="QWERy">
+                QWERy
             </p>
-            <p>
-                Ready to explore?
-            </p>
-            <button>
-                Get started
-            </button>
+            <div class="button">
+                <label>
+                    Ready to explore?
+                </label>
+                <button>
+                    Get started
+                </button>
+            </div>
         </div>
-         <div class="bottom_block">
-            <h4>
-                Let's go on vacation, Make your day
-            </h4>
-            <label for="email">
-                Email address
-            </label>
-            <input type="email">
-            <button>
-                >
-            </button>
+        <div class="line"></div>
+        <div class="bottom_block">
+            <div class="left_side">
+                <h4>
+                    Let's go on vacation,<br>Make your day
+                </h4>
+                <input type="email" placeholder="Email address" >
+                <button>
+                    >
+                </button>
+            </div>
             <div class="block">
                 <div class="Services">
                     <h5>Services</h5>
-                    <p>Email Marketing</p>
-                    <p>Campaigns</p>
-                    <p>Branding</p>
-                    <p>Offline</p>
+                    <a href="#">Email Marketing</a>
+                    <a href="#">Campaigns</a>
+                    <a href="#">Branding</a>
+                    <a href="#">Offline</a>
                 </div>
                 <div class="About">
                     <h5>About</h5>
-                    <p>Our Story</p>
-                    <p>Benefits</p>
-                    <p>Team</p>
-                    <p>Careers</p>
+                    <a href="#">Our Story</a>
+                    <a href="#">Benefits</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
                 </div>
                 <div class="Help">
                     <h5>Help</h5>
-                    <p>FAQs</p>
-                    <p>Contact Us</p>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
                 </div>
             </div>
         </div>
         <footer>
-
+            <div class="footer_line">
+                <div class="a">
+                <a href="#">Terms & Conditions</a>
+                <a href="#"> Privacy Policy</a>
+                </div>
+                <div class="img">
+                    <a href="#" class="fb">
+                        <img src="imeges\fb-icon.png" alt="fb">
+                    </a>
+                    <a href="#" class="twit">
+                        <img src="imeges\Vector.png" alt="twit">
+                    </a>
+                    <a href="#" class="target">
+                        <img src="imeges\target.png" alt="target">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright 2021 QWERy
+            </div>
         </footer>
+    </div>
 </body>
 </html>
