@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.background{
+    height: 1558px;
+    left: 0px;
+    top: 0px;
+    background-image: url("../imeges/Background.jpg");
+    background-position: center;
+    background-size: cover;
+}

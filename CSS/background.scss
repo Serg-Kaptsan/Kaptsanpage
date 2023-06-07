@@ -46,30 +46,26 @@ a.logo_QWERy{
     line-height: 25px;
 }
 .Search {
-    label{
+    input{
         font-weight: 400;
         font-size: 17px;
         line-height: 23px;
-    }
-    img{
-        width: 17px;
-        height: 17px;
-    }
-    input{
         background: transparent;
         border: none;
         position: relative;
-        // width: 200px;
-        // height: 17px;
-        // &::placeholder{
-        //     content: url("../imeges/magnifying-glass.png");
-        //     position: absolute;
-        //     color: white;
-        //     top: 0;
-        //     left: -17px;
-        //     width: 100%;
-        //     height: 100%;
-        // }
+        width: 200px;
+        height: 20px;
+        &::placeholder{
+            color: white;
+            text-align: right;
+            }
+        }
+    img{
+        position: absolute;
+        filter: invert(100%);
+        right: 150px;
+        width: 17px;
+        height: 17px;
     }
 }
 .left-section{
@@ -132,8 +128,6 @@ h3{
     line-height: 25px;
     letter-spacing: 6px;
     text-transform: uppercase;
-        // @extend.center-block;
-        // color: #FFC178;
 }
 .center-block h3{
     color: #FFC178;
@@ -158,24 +152,14 @@ p{
     font-size: 18px;
     color: #FBD784;
     margin-top: 27px;
-    // i{
-    //     display: inline-block;
-    //     margin-left: 9px;
-    //     width: 24px;
-    //     height: 16px;
-    //     color:  #FBD784;
-    // }
+    i{
+    margin-left: 9px;
+    transform: scaleX(1.5);
+}
 }
 .read_more_l3{
     @extend .read_more;
     margin-bottom: 42px;
-}
-.read_more i{
-    display: inline-block;
-    margin-left: 9px;
-    width: 24px;
-    height: 16px;
-    color:  #FBD784;
 }
 .center-block{
     width: 950px;
@@ -184,28 +168,37 @@ p{
     margin-right: auto;
 }
 .Mark{
-    // position: absolute;
+    position: relative;
     display: inline-block;
     text-align: center;
     background-color: white;
     background-size: 28px 28px;
     margin-left: 10px;
     // margin-top: 765px;
-    // width: 28px;
-    // height: 28px;
+    min-width: 28px;
+    min-height: 28px;
     border-radius: 50% 50% 50% 0;
-    font-size: 18px;
-}
-.Mark::before{
-    // position: absolute;
-    display: inline-block;
-    content: "";
-    top: 4px;
-    left: 2px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: rgb(0, 60, 255);
+    transform: scale(1);
+        &:before{
+        position: absolute;
+        display: inline-block;
+        content: "";
+        top: 2px;
+        left: 2px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgb(0, 60, 255);
+        }
+        &::after{
+            position: absolute;
+            content: "M";
+            color: white;
+            font-size: 18px;
+            z-index: 50;
+            top: 5px;
+            right: 7px;
+        }
 }
 .Mark:hover{
     background-color: white;
@@ -218,39 +211,18 @@ p{
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+    vertical-align: bottom;
     margin-top: 126px;
-    // i{
-    //     display: inline-block;
-    //     margin-left: 9px;
-    //     width: 16px;
-    //     height: 24px;
-    //     color: white;
-    // }
-}
-// .scroll::after{
-//     content: "";
-//     font-family: "Font Awesome";
-//     font-weight: 900; 
-//     content: "\f063";
-//     color: white;
-//     margin-left: 9px;
-//     width: 16px;
-//     height: 24px;
-// }
-.scroll i{
-        display: inline-block;
+    i{
+        transform: scaleY(1.5);
         margin-left: 9px;
-        width: 16px;
-        height: 24px;
-        color: white;
+    }
 }
 .level-2{
-    height: 721px;
     margin-bottom: 250px;
 }
 .level-2 > *{
    display: inline-block;
-//    float: none;
 }
 .text_block{
     text-align: left;
@@ -259,7 +231,6 @@ p{
     vertical-align: top;
     p{
     width: 632px;
-    // height: 160px;
     }
 }
 .level-4 div{
@@ -290,7 +261,6 @@ p{
     width: 705px;
 }
 .level-4{
-    height: 720px;
     margin-top: 227px;
 }
 .level-4 > *{
@@ -326,6 +296,7 @@ p{
           margin-right: 55px;  
     }
     button{
+        border: none;
         width: 240px;
         height: 69px;
         background: #FFA343;
@@ -350,6 +321,7 @@ p{
     align-items: flex-start;
     padding: 0 327px;
     .left_side{
+        position: relative;
         text-align: left;
         input{
             width: 400px;
@@ -370,12 +342,14 @@ p{
     }
 }
 .left_side button{
+    position: absolute;
+    bottom: 69px;
+    left: 331px;
     width: 69px;
-    height: 69px;
+    height: 67px;
     background: #FFA343;
     border-radius: 8px 8px 0px 0px;
     border: none;
-    margin-left: -74px;
     position: relative;
     font-size: 14px;
     font-weight: 700;
