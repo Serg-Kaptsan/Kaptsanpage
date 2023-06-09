@@ -197,7 +197,8 @@ p{
             font-size: 18px;
             z-index: 50;
             top: 5px;
-            right: 7px;
+            // right: 7px;
+            left: 7px;
         }
 }
 .Mark:hover{
@@ -205,6 +206,14 @@ p{
     width: 300px;
     height: 50px;
     border-radius: 12px 12px 12px 0;
+            // position: absolute;
+            // content: "M";
+            // color: white;
+            // font-size: 18px;
+            // z-index: 50;
+            // top: 5px;
+            // right: 293px;
+            // left: 7px;
 }
 .scroll{
     font-weight: 600;
