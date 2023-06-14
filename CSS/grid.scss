@@ -1,6 +1,10 @@
 :root{
-    --font-size: 10px;
+    --font-size:10px;
     --text-color:#48555B;
+}
+html, body{
+    font-size: var(--font-size);
+    color: var(--text-color);
 }
 *{
     box-sizing: border-box;
@@ -8,18 +12,17 @@
 body{
     height: 100%;
     width: 100%;
-    color: black;
+    // color: black;
     font-family: 'Open-Sans', sans-serif;
 }
 main{
     text-align: center;
     padding: 0 250px;
 }
-p, h2,h3,h4,h5{
-    color: var(--text-color);
-    // font-size: var(--font-size);
-    // line-height: 19px;
-}
+// p, h2,h3,h4,h5{
+//     // font-size: var(--font-size);
+//     // line-height: 19px;
+// }
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -33,9 +36,10 @@ a{
     background-size: cover;
     text-align: center;
     p{
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
+        font-size: 1.6rem;
+        // font-size: 16px;
+        line-height: 19px;
+        color: white;
     }
 }
 .background .triangle{
@@ -73,10 +77,12 @@ h1{
     justify-content: space-between;
     height: 65px;
     align-items: center;
+    padding: 0 250px;
     .triangle{
         position: relative;
         width: 80px;
         height: 16px;
+        // bottom: 24px;
         .text_triangle{
             filter: invert(100%);
         }
@@ -93,6 +99,9 @@ h1{
 }
 #blue{
     color: #00A4E5;
+}
+hr{
+    border-bottom: 1px solid #E6E6E6 !important;
 }
 .topik_1{
     position: relative;
@@ -140,9 +149,13 @@ span{
 }
 .grid_1 div{
     position: relative;
-    width: 140px;
-    height: 244px;
+    min-width: 140px;
+    min-height: 244px;
     padding-bottom: 0;
+    img{
+        width: 100%;
+        // height: 100%;
+    }
 }
 .grid_1{
     display: grid;
@@ -166,14 +179,14 @@ span{
     }
     h3{
         position: relative;
-    }
-    ::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50px;
-        border-bottom: 3px solid #00A4E5; 
+        ::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            border-bottom: 3px solid #00A4E5;
+        } 
     }
 }
 button{
@@ -222,8 +235,8 @@ button{
     grid-row: 2;    
 }
 .layout div{
-    width: 300px;
-    height: 330px;
+    min-width: 300px;
+    min-height: 330px;
     text-align: left;
     border: 1px solid #E6E6E6;
     // :last-child{

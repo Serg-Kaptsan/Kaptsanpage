@@ -181,7 +181,7 @@ p{
     transform: scale(1);
         &:before{
         position: absolute;
-        display: inline-block;
+        // display: inline-block;
         content: "";
         top: 2px;
         left: 2px;
