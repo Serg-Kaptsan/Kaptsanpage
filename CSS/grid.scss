@@ -5,6 +5,7 @@
 html, body{
     font-size: var(--font-size);
     color: var(--text-color);
+    overflow-y: hidden;
 }
 *{
     box-sizing: border-box;
