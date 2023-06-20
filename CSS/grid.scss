@@ -5,7 +5,7 @@
 html, body{
     font-size: var(--font-size);
     color: var(--text-color);
-    overflow-y: hidden;
+    // overflow-y: hidden;
 }
 *{
     box-sizing: border-box;
@@ -91,6 +91,7 @@ h1{
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     a{
     margin-left: 30px;
     font-size: 12px;
@@ -196,6 +197,7 @@ span{
 }
 .line{
     display: inline-flex;
+    flex-wrap: wrap;
     height: 38px;
     width: 100%;
     justify-content: space-between;
@@ -242,14 +244,14 @@ button{
     align-items: end;
     // justify-items: stretch;
 }
-@media(min-width: 1400px){
+@media(min-width: 1200px){
     .layout{
         grid-template-areas:
         "top top top"
         "left middle right";
     }
 }
-@media(max-width: 1400px){
+@media(max-width: 1200px){
     .layout{
         grid-template-areas:
         "top"
@@ -350,17 +352,16 @@ h2{
 }
 .bottom_line{
     display: flex;
+    flex-wrap: wrap;
     height: 99px;
     width: 100%;
     justify-content: center;
     margin: 0 auto;
     background-color: black;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.bottom_line *{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}    
 .bottom_line h4{
         margin-right: 70px;
         color: white;
@@ -373,6 +374,7 @@ input{
     height: 40px;
     border: 1px solid #979797;
     padding-left: 16px;
+    margin-right: -3px;
     ::placeholder{
         font-size: 14px;
         line-height: 16px;
@@ -400,8 +402,10 @@ footer{
 }
 .block_bottom{
     display: inline-flex;
-    height: 239px;
-    justify-content: space-between;
+    // height: 239px;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     // margin-right: 276px;
     // margin-left: 249px;
     // align-items: center;
@@ -467,4 +471,6 @@ h6{
     height: 60px;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 35px;
 }
