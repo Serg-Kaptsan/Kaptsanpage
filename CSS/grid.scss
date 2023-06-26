@@ -439,18 +439,27 @@ h6{
 }
 @media(max-width: 450px){
     main, div.heder_line{
-        padding: 0 10px;
-        margin-right: 0%;
+        padding: 0 0 0 10px;
+        margin-right: 0;
     }
-    h4, .txt p, .line p{
-        width: 350px;
+    h4, .txt, .txt p, .line p{
+        width: 340px;
+        margin-right: 0%;
     }
     .bottom_line{
         flex-direction: column;
-        align-items: center;
         flex-wrap: nowrap;
-        h4{
-            margin-right: 0%;
+        text-align: center;
+        height: auto;
+        padding: 5px 0;
+        & input{
+        margin: 5px 0;
         }
+        h4{
+            margin-right: 0;
+        }
+    }
+    .b_3{
+        margin-left: 10px;
     }
 }
