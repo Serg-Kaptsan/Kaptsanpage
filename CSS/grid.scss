@@ -182,6 +182,7 @@ span{
 .grid_1 div{
     position: relative;
     padding-bottom: 0;
+    text-align: left;
 }
 .line{
     display: flex;
@@ -346,7 +347,7 @@ input{
     }
 }
 footer{
-    padding-top: 42px;
+    padding-top: 21px;
     background-color: black;
     justify-content: center;
 }
@@ -382,6 +383,7 @@ h6{
     line-height: 13px;
     letter-spacing: 0.846154px;
     margin-bottom: 10px;
+    margin-top: 21px;
 }
 .b_1 {
     margin-right: 71px;
@@ -392,7 +394,6 @@ h6{
 .b_2{
     display: inline-flex;
     justify-content: space-between;
-    margin-right: 58px;
     div *{
         display: flex;
         text-decoration: column;
@@ -404,11 +405,14 @@ h6{
 .column_3{
     margin-top: 25px;
 }
-.b_3 p{
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 0.846154px;
-    width: 128px;
+.b_3{
+    margin-left: 58px;
+    p{
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.846154px;
+        width: 128px;
+    }
 }
 .icons{
     display: flex;
